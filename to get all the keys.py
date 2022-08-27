@@ -1,0 +1,22 @@
+import json
+a=[
+    {
+        "id":1,
+        "name":"name1",
+        "color":[
+            "red",
+            "green"
+        ]
+    },
+    {
+        "id":2,
+        "name":"name2",
+        "color":[
+            "pink",
+            "yellow"
+        ]
+    }
+]
+c=open("txt.json","w")
+b=json.dump(a,c)
+c.close()
